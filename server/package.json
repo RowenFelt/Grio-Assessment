@@ -1,0 +1,27 @@
+{
+  "name": "grio-assessment-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Server for Grio coding assessment",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "contributors": [
+    "Rowen Felt <rowenfelt@gmail.com"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "glob": "^7.1.2",
+    "knex": "^0.14.6"
+  }
+}

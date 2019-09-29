@@ -1,0 +1,537 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login tests Login snapshot test 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LoginPage
+    errorMessage="test message"
+    signIn={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "align": "center",
+      "children": Array [
+        <Styled(PageHeader)>
+          Please Login
+        </Styled(PageHeader)>,
+        <Form
+          bsClass="form"
+          componentClass="form"
+          horizontal={false}
+          inline={false}
+          onSubmit={[Function]}
+        >
+          <FormGroup
+            bsClass="form-group"
+          >
+            <div>
+              Email address
+            </div>
+            <input
+              id="username"
+              onChange={[Function]}
+              placeholder="Username"
+              type="username"
+            />
+          </FormGroup>
+          <FormGroup
+            bsClass="form-group"
+          >
+            <div>
+              Password
+            </div>
+            <input
+              id="password"
+              onChange={[Function]}
+              placeholder="Password"
+              type="password"
+            />
+          </FormGroup>
+          <Styled(Button)
+            id="login_button"
+            type="submit"
+          >
+            Submit
+          </Styled(Button)>
+        </Form>,
+        <div
+          align="center"
+        >
+          test message
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Please Login",
+        },
+        "ref": null,
+        "rendered": "Please Login",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "bsClass": "form",
+          "children": Array [
+            <FormGroup
+              bsClass="form-group"
+            >
+              <div>
+                Email address
+              </div>
+              <input
+                id="username"
+                onChange={[Function]}
+                placeholder="Username"
+                type="username"
+              />
+            </FormGroup>,
+            <FormGroup
+              bsClass="form-group"
+            >
+              <div>
+                Password
+              </div>
+              <input
+                id="password"
+                onChange={[Function]}
+                placeholder="Password"
+                type="password"
+              />
+            </FormGroup>,
+            <Styled(Button)
+              id="login_button"
+              type="submit"
+            >
+              Submit
+            </Styled(Button)>,
+          ],
+          "componentClass": "form",
+          "horizontal": false,
+          "inline": false,
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bsClass": "form-group",
+              "children": Array [
+                <div>
+                  Email address
+                </div>,
+                <input
+                  id="username"
+                  onChange={[Function]}
+                  placeholder="Username"
+                  type="username"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Email address",
+                },
+                "ref": null,
+                "rendered": "Email address",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "id": "username",
+                  "onChange": [Function],
+                  "placeholder": "Username",
+                  "type": "username",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bsClass": "form-group",
+              "children": Array [
+                <div>
+                  Password
+                </div>,
+                <input
+                  id="password"
+                  onChange={[Function]}
+                  placeholder="Password"
+                  type="password"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Password",
+                },
+                "ref": null,
+                "rendered": "Password",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "id": "password",
+                  "onChange": [Function],
+                  "placeholder": "Password",
+                  "type": "password",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Submit",
+              "id": "login_button",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": "Submit",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "align": "center",
+          "children": "test message",
+        },
+        "ref": null,
+        "rendered": "test message",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "align": "center",
+        "children": Array [
+          <Styled(PageHeader)>
+            Please Login
+          </Styled(PageHeader)>,
+          <Form
+            bsClass="form"
+            componentClass="form"
+            horizontal={false}
+            inline={false}
+            onSubmit={[Function]}
+          >
+            <FormGroup
+              bsClass="form-group"
+            >
+              <div>
+                Email address
+              </div>
+              <input
+                id="username"
+                onChange={[Function]}
+                placeholder="Username"
+                type="username"
+              />
+            </FormGroup>
+            <FormGroup
+              bsClass="form-group"
+            >
+              <div>
+                Password
+              </div>
+              <input
+                id="password"
+                onChange={[Function]}
+                placeholder="Password"
+                type="password"
+              />
+            </FormGroup>
+            <Styled(Button)
+              id="login_button"
+              type="submit"
+            >
+              Submit
+            </Styled(Button)>
+          </Form>,
+          <div
+            align="center"
+          >
+            test message
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Please Login",
+          },
+          "ref": null,
+          "rendered": "Please Login",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bsClass": "form",
+            "children": Array [
+              <FormGroup
+                bsClass="form-group"
+              >
+                <div>
+                  Email address
+                </div>
+                <input
+                  id="username"
+                  onChange={[Function]}
+                  placeholder="Username"
+                  type="username"
+                />
+              </FormGroup>,
+              <FormGroup
+                bsClass="form-group"
+              >
+                <div>
+                  Password
+                </div>
+                <input
+                  id="password"
+                  onChange={[Function]}
+                  placeholder="Password"
+                  type="password"
+                />
+              </FormGroup>,
+              <Styled(Button)
+                id="login_button"
+                type="submit"
+              >
+                Submit
+              </Styled(Button)>,
+            ],
+            "componentClass": "form",
+            "horizontal": false,
+            "inline": false,
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-group",
+                "children": Array [
+                  <div>
+                    Email address
+                  </div>,
+                  <input
+                    id="username"
+                    onChange={[Function]}
+                    placeholder="Username"
+                    type="username"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Email address",
+                  },
+                  "ref": null,
+                  "rendered": "Email address",
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "id": "username",
+                    "onChange": [Function],
+                    "placeholder": "Username",
+                    "type": "username",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-group",
+                "children": Array [
+                  <div>
+                    Password
+                  </div>,
+                  <input
+                    id="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    type="password"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Password",
+                  },
+                  "ref": null,
+                  "rendered": "Password",
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "id": "password",
+                    "onChange": [Function],
+                    "placeholder": "Password",
+                    "type": "password",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Submit",
+                "id": "login_button",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "align": "center",
+            "children": "test message",
+          },
+          "ref": null,
+          "rendered": "test message",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
+`;
