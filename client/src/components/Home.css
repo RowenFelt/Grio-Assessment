@@ -1,0 +1,7 @@
+.shift-right {
+  transform: translate(30px); /* Equal to translateX(10px) */
+}
+
+.shift-right-more {
+  transform: translate(40px); 
+}

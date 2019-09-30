@@ -11,7 +11,28 @@ async function authenticate(req, res){
 	}
 }
 
+async function incrementCounter(req, res){
+	console.log("received increment request");
+	if ("token" in req.body){
+		const token = req.body.token;
+		jwt.verify(token, 'grio-secret-code', function(err, decoded){
+			if(!err){ 
+				if ("counter" in req.body){
+					const counter = req.body.counter;
+					const tempCounter = Math.max(1, counter*2);
+					res.status(200).json(tempCounter);
+				}
+			} else {
+				res.status(402).send(err);
+			}
+		})
+	} else {
+		res.status(403);
+	}
+}
+
 module.exports = {
 	authenticate,
+	incrementCounter,
 };
 
