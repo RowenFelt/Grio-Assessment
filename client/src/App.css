@@ -45,3 +45,9 @@
 .block-list > *:hover {
     cursor: move;
 }
+
+#mysection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

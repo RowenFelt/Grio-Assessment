@@ -21,7 +21,7 @@ class ContentArea extends Component {
 	 fetch('/authenticate', {
  	  	 method: 'POST',
 		 headers: new Headers({ 'Content-type': 'application/json' }), 
-		 body: JSON.stringify({ data }),
+		 body: JSON.stringify({ username: data.username, password: data.password }),
 	   }).then((response) => {
 	     this.onServerLogin(response);
 	   }).catch((error) => {

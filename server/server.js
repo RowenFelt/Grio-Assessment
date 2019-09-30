@@ -2,21 +2,15 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const { authenticate } = require('./src/controllers.js');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var token = null;
-
 //token authentication route
 //adapted from https://www.npmjs.com/package/jsonwebtoken
-app.post('/authenticate', function(req, res){
-	console.log("received authentication request");
-  	var authToken = jwt.sign({username: req.body.data.username}, 'grio-secret-code',{expiresIn: 120});
-	token = authToken;
-	res.status(200).json(authToken);
-})
+app.post('/authenticate', authenticate);
 
 // Register a route that requires a valid token to view data
 app.get('/api', function(req, res){

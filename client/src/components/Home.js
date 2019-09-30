@@ -31,7 +31,9 @@ class Homepage extends Component {
   render() {
   return (
     <div>
-		<p align="center"> My homepage</p>
+	  <div id="mysection">
+	  	<p>hello</p>
+	  </div>
     <div align="center">{this.props.errorMessage}</div>
     </div>
   );
