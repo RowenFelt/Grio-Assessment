@@ -46,8 +46,8 @@
     "bootstrap": "^4.3.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.5.0",
+    "jest-mock-express": "^0.1.1",
     "jest-transform-css": "^2.0.0",
-    "lodash": "^4.17.15",
     "react-addons-test-utils": "^15.6.2",
     "react-modal": "^3.10.1"
   }

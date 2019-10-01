@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Homepage tests Homepage snapshot test 1`] = `
+exports[`Homepage rendering and simulated increment test Homepage snapshot test 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Homepage
@@ -29,6 +29,7 @@ ShallowWrapper {
         </h3>
         <styled.button
           className="shift-right-more"
+          id="FancyButton"
           onClick={[Function]}
         >
           Increment
@@ -68,11 +69,13 @@ ShallowWrapper {
             0
           </h3>
           <button
+            id="CancelButton"
             onClick={[Function]}
           >
             Cancel
           </button>
           <button
+            id="ConfirmButton"
             onClick={[Function]}
           >
             Confirm
@@ -95,6 +98,7 @@ ShallowWrapper {
           </h3>,
           <styled.button
             className="shift-right-more"
+            id="FancyButton"
             onClick={[Function]}
           >
             Increment
@@ -134,11 +138,13 @@ ShallowWrapper {
               0
             </h3>
             <button
+              id="CancelButton"
               onClick={[Function]}
             >
               Cancel
             </button>
             <button
+              id="ConfirmButton"
               onClick={[Function]}
             >
               Confirm
@@ -173,6 +179,7 @@ ShallowWrapper {
           "props": Object {
             "children": "Increment",
             "className": "shift-right-more",
+            "id": "FancyButton",
             "onClick": [Function],
           },
           "ref": null,
@@ -196,11 +203,13 @@ ShallowWrapper {
                 0
               </h3>,
               <button
+                id="CancelButton"
                 onClick={[Function]}
               >
                 Cancel
               </button>,
               <button
+                id="ConfirmButton"
                 onClick={[Function]}
               >
                 Confirm
@@ -269,6 +278,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Cancel",
+                "id": "CancelButton",
                 "onClick": [Function],
               },
               "ref": null,
@@ -281,6 +291,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Confirm",
+                "id": "ConfirmButton",
                 "onClick": [Function],
               },
               "ref": null,
@@ -310,6 +321,7 @@ ShallowWrapper {
           </h3>
           <styled.button
             className="shift-right-more"
+            id="FancyButton"
             onClick={[Function]}
           >
             Increment
@@ -349,11 +361,13 @@ ShallowWrapper {
               0
             </h3>
             <button
+              id="CancelButton"
               onClick={[Function]}
             >
               Cancel
             </button>
             <button
+              id="ConfirmButton"
               onClick={[Function]}
             >
               Confirm
@@ -376,6 +390,7 @@ ShallowWrapper {
             </h3>,
             <styled.button
               className="shift-right-more"
+              id="FancyButton"
               onClick={[Function]}
             >
               Increment
@@ -415,11 +430,13 @@ ShallowWrapper {
                 0
               </h3>
               <button
+                id="CancelButton"
                 onClick={[Function]}
               >
                 Cancel
               </button>
               <button
+                id="ConfirmButton"
                 onClick={[Function]}
               >
                 Confirm
@@ -454,6 +471,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Increment",
               "className": "shift-right-more",
+              "id": "FancyButton",
               "onClick": [Function],
             },
             "ref": null,
@@ -477,11 +495,13 @@ ShallowWrapper {
                   0
                 </h3>,
                 <button
+                  id="CancelButton"
                   onClick={[Function]}
                 >
                   Cancel
                 </button>,
                 <button
+                  id="ConfirmButton"
                   onClick={[Function]}
                 >
                   Confirm
@@ -550,6 +570,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Cancel",
+                  "id": "CancelButton",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -562,6 +583,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Confirm",
+                  "id": "ConfirmButton",
                   "onClick": [Function],
                 },
                 "ref": null,

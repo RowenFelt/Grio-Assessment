@@ -51,6 +51,10 @@ class Homepage extends Component {
 	this.fetchIncrement = this.fetchIncrement.bind(this);
   }
 
+  componentDidMount() {
+	ReactModal.setAppElement('body');
+  }
+
   onIncrementResponse(response) {
 	const status = response.status; //eslint-disable-line
 	response.json().then((data) => {
@@ -95,15 +99,24 @@ class Homepage extends Component {
 	  <div>
 		<CenteredHeader>
 		  <h3 className="shift-right">Count: {this.state.count}</h3>
-		  <FancyButton className="shift-right-more" onClick={ () => this.increment()}>Increment</FancyButton>
+		  <FancyButton 
+			id="FancyButton"
+			className="shift-right-more" 
+			onClick={ () => this.increment()}>
+			  Increment
+		  </FancyButton>
 		  <ReactModal
 			isOpen={this.state.confirmationView}
 			style={customStyles}
 			contentLabel="Increment confirmation modal window">
 			  <h3>Current count: {this.state.count}</h3> 
 			  <h3>Next count: {this.state.tempCount}</h3>
-			  <button onClick={ () => this.cancelIncrement()}>Cancel</button>
-			  <button onClick={ () => this.confirmIncrement()}>Confirm</button>
+			  <button 
+				id="CancelButton"
+				onClick={ () => this.cancelIncrement()}>Cancel</button>
+			  <button 
+				id="ConfirmButton"
+				onClick={ () => this.confirmIncrement()}>Confirm</button>
 		  </ReactModal>
 		</CenteredHeader>
 	  </div>

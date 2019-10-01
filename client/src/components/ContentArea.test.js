@@ -1,39 +1,43 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 
 import ContentArea from './ContentArea';
 import LoginPage from './Login';
 
-describe('ContentArea operations', () => {
-  let _fetch; // eslint-disable-line no-underscore-dangle
-  let _Date; // eslint-disable-line no-underscore-dangle
-  beforeAll(() => {
-    _fetch = global.fetch;
-    global.fetch = jest.fn();
-    _Date = Date;
-    const testDate = new Date();
-    Date = class extends Date { // eslint-disable-line
-      constructor() {
-        return testDate;
-      }
-      static now() { return testDate.valueOf(); }
-    };
+describe('Initialization', () => {
+  const component = shallow(<ContentArea />);
+
+  test('ContentArea snapshot test', () => {
+	expect(component).toMatchSnapshot();
   });
 
-  afterAll(() => {
-    global.fetch = _fetch;
-    Date = _Date; // eslint-disable-line no-global-assign
-  });
-
-  describe('Initialization', () => {
-    beforeEach(() => {
-      global.fetch.mockReset();
-    });
-
-    test('Login page is rendered initially', () => {
-      const contentArea = shallow(<ContentArea />);
-      expect(contentArea.find(LoginPage).exists()).toBe(true);
-    });
+  test('Login page is rendered initially', () => {
+	expect(component.find(LoginPage).exists()).toBe(true);
   });
 });
 
+describe('SignIn with 200 status code should set token to state and change view', () => {
+	const component = mount(<ContentArea />);
+	const res = {};
+	res.status = 200;
+	res.json = (() => Promise.resolve('token'));
+	component.instance().onServerLogin(res);
+
+  test('On server login triggers verified state view change', () => {
+	expect(component.state().authToken).toEqual('token');
+	expect(component.state().view).toEqual('verified');
+  });
+});
+
+describe('SignIn with 404 status code should return view to login', () => {
+	const component = mount(<ContentArea />);
+	const res = {};
+	res.status = 404;
+	res.json = (() => Promise.resolve('token'));
+
+  test('On server login triggers verified state view change', () => {
+	component.instance().onServerLogin(res);
+	expect(component.state().authToken).toEqual(null);
+	expect(component.state().view).toEqual('login');
+  });
+});
