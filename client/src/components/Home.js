@@ -33,11 +33,6 @@ const customStyles = {
   }
 };
 
-/* props:
-    administratorView: callback to show admin view
-*/
-
-
 class Homepage extends Component {
 	constructor(props) {
 		super(props);
