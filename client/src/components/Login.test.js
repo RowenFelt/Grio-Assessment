@@ -10,7 +10,7 @@ describe('Login tests', () => {
     expect(component).toMatchSnapshot();
   });
 
-  // mock the Google API with jest.fn()
+  // mock the authentication API with jest.fn()
   const comp = mount(<LoginPage signIn={jest.fn()} errorMessage="test message" />);
 
   // Make sure error message contains the correct string

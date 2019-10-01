@@ -16,41 +16,39 @@ const StyledPageHeader = styled(PageHeader)`
 `;
 
 /* props:
-    administratorView: callback to show admin view
-    ballotView: callback to show ballot view
+ * signIn: callback to login API
+ * errorMessage: callback to error message string
 */
 
 class LoginPage extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			username: "",
-			password: ""
-		};
-	}
+  constructor(props) {
+	super(props);
+	this.state = {
+	  username: "",
+	  password: ""
+	};
+  }
 
   render() {
-  return (
-    <div align="center">
-      <StyledPageHeader>Please Login</StyledPageHeader>
-	  <Form onSubmit={ () => this.props.signIn(this.state)}>
-	  	<FormGroup>
-		  <div>Email address</div>
-		  <input type="username" id='username' placeholder="Username" 
-	  			onChange={ (e) => this.setState({username: e.target.value})}/>
-		  </FormGroup>
-		<FormGroup>
-		  <div>Password</div>
-		  <input type="password" id='password' placeholder="Password"
-	  		onChange={ (e) => this.setState({password: e.target.value})}/>
-		  </FormGroup>
-      <StyledButton id="login_button" type="submit">Submit</StyledButton>
-	  </Form>
-      <div align="center">{this.props.errorMessage}</div>
-    </div>
-  );
-	}
-
+	return (
+	  <div align="center">
+		<StyledPageHeader>Please Login</StyledPageHeader>
+		<Form onSubmit={ () => this.props.signIn(this.state)}>
+		  <FormGroup>
+			<div>Email address</div>
+			<input type="username" id='username' placeholder="Username" 
+			  onChange={ (e) => this.setState({username: e.target.value})}/>
+			</FormGroup>
+		  <FormGroup>
+			<div>Password</div>
+			<input type="password" id='password' placeholder="Password"
+			  onChange={ (e) => this.setState({password: e.target.value})}/>
+			</FormGroup>
+		  <StyledButton id="login_button" type="submit">Submit</StyledButton>
+		</Form>
+	  </div>
+	);
+  }
 }
 
 LoginPage.propTypes = {

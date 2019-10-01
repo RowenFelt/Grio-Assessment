@@ -66,11 +66,6 @@ ShallowWrapper {
             Submit
           </Styled(Button)>
         </Form>,
-        <div
-          align="center"
-        >
-          test message
-        </div>,
       ],
     },
     "ref": null,
@@ -245,18 +240,6 @@ ShallowWrapper {
         ],
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "align": "center",
-          "children": "test message",
-        },
-        "ref": null,
-        "rendered": "test message",
-        "type": "div",
-      },
     ],
     "type": "div",
   },
@@ -311,11 +294,6 @@ ShallowWrapper {
               Submit
             </Styled(Button)>
           </Form>,
-          <div
-            align="center"
-          >
-            test message
-          </div>,
         ],
       },
       "ref": null,
@@ -489,18 +467,6 @@ ShallowWrapper {
             },
           ],
           "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "align": "center",
-            "children": "test message",
-          },
-          "ref": null,
-          "rendered": "test message",
-          "type": "div",
         },
       ],
       "type": "div",

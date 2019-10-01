@@ -12,6 +12,9 @@ app.use(bodyParser.json());
 app.post('/authenticate', authenticate);
 app.post('/incrementCounter', incrementCounter);
 
-// Launch our app on port 5000
+/*normally I would want to run this as an https server because 
+ * I'm sending authentication tokens, but I decided to use http 
+ * because of certificate signing issues on localhost
+ */
 console.log("listening on port 5000")
-app.listen('5000');
+app.listen('5000'); 

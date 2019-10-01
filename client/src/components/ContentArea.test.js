@@ -11,7 +11,7 @@ describe('ContentArea operations', () => {
     _fetch = global.fetch;
     global.fetch = jest.fn();
     _Date = Date;
-    const testDate = new Date('2018-1-1');
+    const testDate = new Date();
     Date = class extends Date { // eslint-disable-line
       constructor() {
         return testDate;
