@@ -33,6 +33,7 @@ class ContentArea extends Component {
     const status = response.status; //eslint-disable-line
     response.json().then((data) => {
 	  if (status === 200) {
+		console.log(data);
         this.setState({ view: 'verified', authToken: data, errorMessage: '' }); //eslint-disable-line
       } else {
 		this.setState({ view: 'login', errorMessage: data.errorMessage || '' });

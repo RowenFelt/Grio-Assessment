@@ -23,7 +23,7 @@ async function incrementCounter(req, res){
 		  res.status(200).json(tempCounter);
 		}
 	  } else {
-		res.status(402).send(err);
+		res.status(402);
 	  }
 	})
   } else {
