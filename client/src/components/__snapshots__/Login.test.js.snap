@@ -37,7 +37,7 @@ ShallowWrapper {
             bsClass="form-group"
           >
             <div>
-              Email address
+              Username
             </div>
             <input
               id="username"
@@ -92,7 +92,7 @@ ShallowWrapper {
               bsClass="form-group"
             >
               <div>
-                Email address
+                Username
               </div>
               <input
                 id="username"
@@ -136,7 +136,7 @@ ShallowWrapper {
               "bsClass": "form-group",
               "children": Array [
                 <div>
-                  Email address
+                  Username
                 </div>,
                 <input
                   id="username"
@@ -153,10 +153,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Email address",
+                  "children": "Username",
                 },
                 "ref": null,
-                "rendered": "Email address",
+                "rendered": "Username",
                 "type": "div",
               },
               Object {
@@ -265,7 +265,7 @@ ShallowWrapper {
               bsClass="form-group"
             >
               <div>
-                Email address
+                Username
               </div>
               <input
                 id="username"
@@ -320,7 +320,7 @@ ShallowWrapper {
                 bsClass="form-group"
               >
                 <div>
-                  Email address
+                  Username
                 </div>
                 <input
                   id="username"
@@ -364,7 +364,7 @@ ShallowWrapper {
                 "bsClass": "form-group",
                 "children": Array [
                   <div>
-                    Email address
+                    Username
                   </div>,
                   <input
                     id="username"
@@ -381,10 +381,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Email address",
+                    "children": "Username",
                   },
                   "ref": null,
-                  "rendered": "Email address",
+                  "rendered": "Username",
                   "type": "div",
                 },
                 Object {

@@ -39,7 +39,7 @@ class LoginPage extends Component {
 		<StyledPageHeader>Please Login</StyledPageHeader>
 		<Form onSubmit={ () => this.props.signIn(this.state)}>
 		  <FormGroup>
-			<div>Email address</div>
+			<div>Username</div>
 			<input type="username" id='username' placeholder="Username" 
 			  onChange={ (e) => this.setState({username: e.target.value})}/>
 			</FormGroup>
