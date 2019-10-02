@@ -32,4 +32,4 @@ The client can be tested by running the following in the client directory:
 
 ```npm test```
 
-Authors: Rowen Felt and Zebediah Millslagle
+Author: Rowen Felt
