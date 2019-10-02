@@ -1,3 +1,8 @@
+/* Home.js
+ * The homepage component, shows counter and increment button.
+ * Also manages view of modal cancel/confirm window.
+ */
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';

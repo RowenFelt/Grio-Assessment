@@ -1,5 +1,6 @@
 /* Content Area
-controls authentication and resulting interface
+ * Performs authentication and manages view for other components
+ * Does not take an props
 */
 import React, { Component } from 'react';
 import { Button, PageHeader } from 'react-bootstrap'; // eslint-disable-line

@@ -1,6 +1,17 @@
+/* controllers.js
+ * route controllers for Grio-Assessment server
+ */
+
 const jwt = require('jsonwebtoken');
 const { checkSchema } = require('express-validator');
 
+/* authenticate route
+ * arguments:
+ *	  req: request object
+ *	  res: response object
+ * requires that request body contain any username and password string
+ * returns a jsonwebtoken for verification or status 401 if no credentials are contained in req body
+ */
 async function authenticate(req, res){
   console.log("received authentication request");
   if (!("username" in req.body)){
@@ -11,6 +22,14 @@ async function authenticate(req, res){
   }
 }
 
+/* incrementCounter route
+ * arguments:
+ *	  req: request object
+ *	  res: response object
+ * requires token and counter be contained in req body
+ * returns updated tempCounter on success, or error code 402 if token cannot be verified
+ * or error code 403 if token is not contained in req body
+ */
 async function incrementCounter(req, res){
   console.log("received increment request");
   if ("token" in req.body){

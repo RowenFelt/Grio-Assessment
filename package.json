@@ -1,0 +1,31 @@
+{
+  "name": "Grio-Assessment",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Grio Apprentice Software Engineer Assessment",
+  "engines": {
+    "node": "8.9.x"
+  },
+  "scripts": {
+    "start": "concurrently \"npm start --prefix server\" \"npm start --prefix client\"",
+    "install": "concurrently \"npm install --prefix server\" \"npm install --prefix client\""
+  },
+  "cacheDirectories": [
+    "client/node_modules",
+    "server/node_modules"
+  ],
+  "contributors": [
+    "Rowen Felt <rowenfelt@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RowenFelt/Grio-Assessment"
+  },
+  "author": "Rowen Felt",
+  "homepage": "https://github.com/RowenFelt/Grio-Assessment/blob/master/README.md"
+}
